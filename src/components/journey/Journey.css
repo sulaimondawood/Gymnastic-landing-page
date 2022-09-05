@@ -1,0 +1,152 @@
+.journey-section > p {
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--lightgray);
+  font-style: italic;
+}
+.journey-section > p > span {
+  margin-right: 2rem;
+}
+.journey-section > p > span:nth-child(2) {
+  margin-left: 2rem;
+}
+.journey-row {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.journey-row .col:nth-child(1),
+.col:nth-child(3) {
+  background-color: var(--darkgray);
+}
+.journey-row .col:nth-child(2) {
+  background-image: var(--planCard);
+  transform: scale(1.2);
+}
+.journey-row .col {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.journey-row > .col p:nth-child(1) {
+  /* color: var(--lightgray); */
+  /* font-size: 4rem; */
+  fill: var(--lightgray);
+  width: 30px;
+}
+.journey-row .col p:nth-child(1),
+p:nth-child(3) {
+  fill: var(--orange);
+
+  font-weight: 600;
+}
+.journey-row .col > h1 {
+  font-size: 4rem;
+  color: var(--lightgray);
+}
+.journey-row .col > div > article {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--lightgray);
+  margin-top: 1.5rem;
+}
+.journey-row .col > div > article > img {
+  width: 20px;
+}
+.journey-row .col:nth-child(1) button,
+.col:nth-child(3) button {
+  background-color: var(--lightgray);
+  border: none;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+.journey-row .col:nth-child(2) button {
+  color: var(--orange);
+  font-size: 1rem;
+  background-color: var(--lightgray);
+  border: none;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .journey-section {
+    padding: 0 20px;
+  }
+  .journey-section > p {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--lightgray);
+    font-style: italic;
+  }
+  .journey-section > p > span {
+    margin-right: 1rem;
+  }
+  .journey-section > p > span:nth-child(2) {
+    margin-left: 1rem;
+  }
+  .journey-row {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .journey-row .col:nth-child(1),
+  .col:nth-child(3) {
+    background-color: var(--darkgray);
+  }
+  .journey-row .col:nth-child(2) {
+    background-image: var(--planCard);
+    transform: scale(1);
+    /* padding: 0 10px; */
+  }
+  .journey-row .col {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .journey-row > .col p:nth-child(1) {
+    /* color: var(--lightgray); */
+    /* font-size: 4rem; */
+    width: 30px;
+    fill: var(--lightgray);
+  }
+  .journey-row .col p:nth-child(1),
+  p:nth-child(3) {
+    fill: var(--orange);
+
+    font-weight: 600;
+  }
+  .journey-row .col > h1 {
+    font-size: 3rem;
+  }
+  .journey-row .col > div > article {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .journey-row .col > div > article p {
+    font-size: 0.8rem;
+  }
+  .journey-row .col > div > article > img {
+    width: 20px;
+  }
+  .journey-row .col:nth-child(1) button,
+  .col:nth-child(3) button {
+    font-size: 0.8rem;
+  }
+  .journey-row .col:nth-child(2) button {
+    font-size: 0.8rem;
+  }
+  .seemore {
+    font-size: 0.8rem;
+  }
+}

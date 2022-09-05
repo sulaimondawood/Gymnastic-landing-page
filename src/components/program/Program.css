@@ -1,0 +1,116 @@
+.program {
+  margin: 50px 20px;
+}
+.program .program-title {
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--lightgray);
+  font-style: italic;
+  /* padding: 1rem; */
+}
+.program .program-title span:nth-child(1) {
+  padding-right: 5rem;
+}
+.program .program-title span:nth-child(2) {
+  padding-left: 5rem;
+}
+.program .row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 40px;
+}
+.program .row .col {
+  background-color: var(--calorycard);
+  color: var(--lightgray);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  transition: 0.2s;
+}
+.program .row .col:hover {
+  transform: scale(1.1);
+  background-image: var(--planCard);
+}
+.program-img {
+  fill: var(--lightgray);
+}
+.program .row .col p:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.program .row .col p {
+  line-height: 2;
+}
+.program .row .col button {
+  width: fit-content;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--lightgray);
+  /* margin: 0 auto; */
+}
+.program .row .col button img {
+  width: 15px;
+}
+@media screen and (max-width: 768px) {
+  .program {
+    margin: 30px 20px;
+  }
+  .program .program-title {
+    font-size: 2rem;
+  }
+  .program .program-title span:nth-child(1) {
+    padding-right: 1rem;
+  }
+  .program .program-title span:nth-child(2) {
+    padding-left: 1rem;
+  }
+  .program .row {
+    gap: 1rem;
+    margin-top: 40px;
+
+    flex-direction: column;
+  }
+  .program .row .col {
+    background-color: var(--calorycard);
+    color: var(--lightgray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    transition: 0.2s;
+  }
+  .program .row .col:hover {
+    transform: scale(1.1);
+    background-image: var(--planCard);
+  }
+
+  .program .row .col p {
+    line-height: 2;
+  }
+  .program .row .col p:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  .program .row .col button {
+    width: fit-content;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--lightgray);
+    /* margin: 0 auto; */
+  }
+  .program .row .col button img {
+    width: 15px;
+  }
+}
